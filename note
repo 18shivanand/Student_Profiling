@@ -1,0 +1,139 @@
+<div class="mb-3">
+    <form accept-charset="UTF-8" action="resume" method="POST" enctype="multipart/form-data" target="_blank">
+        {% csrf_token %}
+          <div class="form-group">
+          <label for="exampleInputName">Full Name</label>
+          <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name and surname" required="required">
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleInputEmail1" required="required">Phone Number</label>
+          <input type="tel" name="phone" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="Enter your email address">
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleInputEmail1" required="required">about yourself</label>
+          <input type="tel" name="about_you" class="form-control" id="about_you" aria-describedby="emailHelp" placeholder="Enter your email address">
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleInputEmail1" required="required">Email address</label>
+          <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email address">
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleInputName">School Name</label>
+          <input type="text" name="school" class="form-control" id="school" placeholder="Enter your name and surname" required="required">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputName">start</label>
+          <input type="text" name="school_start_year" class="form-control" id="school_start_year" placeholder="Enter your name and surname" required="required">
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleInputName">end</label>
+          <input type="text" name="college_start_year" class="form-control" id="college_end_year" placeholder="Enter your name and surname" required="required">
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleInputName">Enter your CGPA or Percentage</label>
+          <input type="number" name="degree_marks" class="form-control" id="degree_marks" placeholder="Enter your percentage" required="required" min="0" value="10">
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleInputName">PUC College name</label>
+          <input type="text" name="college" class="form-control" id="college" placeholder="Enter your name and surname" required="required">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputName">start</label>
+          <input type="text" name="college_start_year" class="form-control" id="college_start_year" placeholder="Enter your name and surname" required="required">
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleInputName">end</label>
+          <input type="text" name="college_end_year" class="form-control" id="college_end_year" placeholder="Enter your name and surname" required="required">
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleInputName">Enter your CGPA or Percentage</label>
+          <input type="number" name="degree_marks" class="form-control" id="degree_marks" placeholder="Enter your percentage" required="required" min="0" value="10">
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleInputName">Degree College name</label>
+          <input type="text" name="degree" class="form-control" id="degree" placeholder="Enter your name and surname" required="required">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputName">start</label>
+          <input type="text" name="degree_start_year" class="form-control" id="degree_start_year" placeholder="Enter your name and surname" required="required">
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleInputName">end</label>
+          <input type="text" name="degree_end_year" class="form-control" id="degree_end_year" placeholder="Enter your name and surname" required="required">
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleInputName">Enter your CGPA or Percentage</label>
+          <input type="number" name="degree_marks" class="form-control" id="degree_marks" placeholder="Enter your percentage" required="required" min="0" value="10">
+        </div>
+  
+            <h1>Skills</h1>
+            <div class="form-group">
+              <input type="text" name="skill1" class="form-control" id="skill1" placeholder="Enter your name and surname" required="required">
+            </div>
+            <div class="form-group">
+              <input type="text" name="skill2" class="form-control" id="skill2" placeholder="Enter your name and surname" required="required">
+            </div>
+            <div class="form-group">
+              <input type="text" name="skill3" class="form-control" id="skill3" placeholder="Enter your name and surname" required="required">
+            </div>
+        
+        <!-- <div class="form-group">
+          <label for="exampleInputName">Start date</label>
+          <input type="date" name="school_start_date" class="form-control" id="school_start_date" placeholder="Enter your name and surname" required="required">
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleInputName">End date</label>
+          <input type="date" name="school_end_date" class="form-control" id="school_start_date" placeholder="Enter your name and surname" required="required">
+        </div> -->
+  
+        <div class="form-group">
+          <label for="exampleInputName">College</label>
+          <input type="text" name="school" class="form-control" id="school" placeholder="Enter your name and surname" required="required">
+        </div>
+        
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" name="address" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" name="city" class="form-control" id="inputCity" placeholder="Istanbul">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" name="zip" class="form-control" id="inputZip" placeholder="34000">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
+          <div class="col-10">
+            <input class="form-control" name="tel" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="example-date-input" class="col-3 col-form-label">Start Date</label>
+          <div class="col-10">
+            <input class="form-control" name="starting_date" type="date" value="2020-02-01" id="example-date-input">
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <label class="mr-4">Upload your CV:</label>
+          <input type="file" name="file">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </div>
