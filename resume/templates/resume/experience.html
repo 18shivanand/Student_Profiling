@@ -43,7 +43,7 @@
 				<div class="slide">
 					<form action="{% url 'resume:create_experience' %}" method="POST">
 						{% csrf_token %}
-						<button class="btn">Add to your experiences</button>
+						<button class="btn" style="margin-right: 65px">Add to your experiences</button>
 						<h2>Company Name</h2>
 						<p>
 							<input type="text" name="company" value="">

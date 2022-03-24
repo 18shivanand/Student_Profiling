@@ -25,11 +25,21 @@ def register(request):
             elif User.objects.filter(email=email).exists() :
                 messages.info(request, 'email Taken')
                 return redirect('student:register')
-            else:
+            elif '1RV' in username:
                 user = User.objects.create_user(username=username,password=password1,email=email,first_name=first_name,last_name=last_name)
                 user.save();
                 messages.info(request, 'successfully created account')
                 return redirect('student:login')
+            elif 'RVCE' in username:
+                user = User.objects.create_user(username=username,password=password1,email=email,first_name=first_name,last_name=last_name)
+                user.save();
+                messages.info(request, 'successfully created account')
+                return redirect('student:login')    
+
+            else:
+                messages.info(request, 'Enter your valid Username')
+                return redirect('student:register')
+               
         else:
             messages.info(request, 'Password is not matching') 
             return redirect('student:register')

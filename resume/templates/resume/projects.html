@@ -43,7 +43,7 @@
 				<div class="slide">
 					<form action="{% url 'resume:create_projects' %}" method="POST">
 						{% csrf_token %}
-						<button class="btn">Add to your projects</button>
+						<button class="btn" style="margin-right: 65px">Add to your projects</button>
 						<h2>Project Name</h2>
 						<p>
 							<input type="text" name="pname" value="">

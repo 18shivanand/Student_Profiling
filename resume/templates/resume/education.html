@@ -43,7 +43,7 @@
 				<div class="slide">
 					<form action="{% url 'resume:create_education' %}" method="POST">
 						{% csrf_token %}
-						<button class="btn">Add to your educations</button>
+						<button class="btn " style="margin-right: 65px">Add to your educations</button>
 						<h2>School Name</h2>
 						<p>
 							<input type="text" name="school" value="">
