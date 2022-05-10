@@ -7,6 +7,8 @@ from django.shortcuts import render, reverse
 # Create your views here.
 from resume import views
 
+
+
 def homepage(request):
     return render(request, 'index.html')
 
