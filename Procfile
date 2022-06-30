@@ -1,1 +1,1 @@
-web : gunicorn student_profiling.wsgi
+web : gunicorn app:app
