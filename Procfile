@@ -1,1 +1,1 @@
-web: gunicorn Student_Profiling.wsgi
+web: gunicorn rvce-student-profiling.wsgi
